@@ -1,0 +1,17 @@
+.nav-glass {
+  background: rgba(6, 9, 19, 0.78);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.btn-copper {
+  background: linear-gradient(135deg, #c67d3b 0%, #e09a56 100%);
+  box-shadow: 0 4px 20px rgba(198, 125, 59, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-copper:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(224, 154, 86, 0.5);
+}

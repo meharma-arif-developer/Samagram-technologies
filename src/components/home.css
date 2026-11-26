@@ -1,0 +1,85 @@
+/* Subtle tech dot grid background */
+.home-page {
+  background-color: #060913;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.055) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+  color: #f8fafc;
+}
+
+/* Hero ambient copper + sky glow */
+.hero-ambient {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(198, 125, 59, 0.24), transparent 44%),
+    radial-gradient(circle at 88% 28%, rgba(56, 189, 248, 0.14), transparent 45%);
+}
+
+/* Copper gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #f5be82 0%, #c67d3b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Premium dark glass card */
+.glass-card {
+  background: linear-gradient(
+    180deg,
+    rgba(18, 26, 46, 0.8) 0%,
+    rgba(10, 15, 29, 0.9) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(224, 154, 86, 0.48);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+}
+
+/* Real image zoom effect on card hover */
+.project-img {
+  transition: transform 0.5s ease;
+}
+
+.glass-card:hover .project-img {
+  transform: scale(1.07);
+}
+
+/* Infinite marquee for industries */
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeLeft 32s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Subtle floating animation */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+.float-animate {
+  animation: floatSlow 5.5s ease-in-out infinite;
+}
